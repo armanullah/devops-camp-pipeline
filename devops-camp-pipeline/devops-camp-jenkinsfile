@@ -29,6 +29,7 @@ pipeline {
             steps {
                 echo "Building application image"
                 //TODO("Lab 4 - Artifact Management"): build the docker app image
+                echo "is this build running"
                 withCredentials([usernameColonPassword(credentialsId: 'akhan-harbor-project', variable: 'HARBOR-AUTH')]) {
                     script {
                         echo "checking if docker builds"
